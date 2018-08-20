@@ -16,4 +16,4 @@ npm i
 npm test
 ```
 
-Alternatively one could add a section to thier readme as well as stencil tot heir dependencies and use the stencil pre-processor.
+Alternatively one could add a section to thier readme as well as stencil tot heir dependencies and use the stencil pre-processor. As illustrated in the "pre-processor" branch of this repository.

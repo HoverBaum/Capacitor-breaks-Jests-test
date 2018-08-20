@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { StorageService } from './storage.service';
+import { Injectable, Inject } from '@angular/core';
+import { STORAGE_SERVICE_TOKEN } from './tokens';
 
 @Injectable({
   providedIn: 'root',
@@ -8,7 +8,7 @@ export class UserService {
 
   private user: any = {}
 
-  constructor(private storage: StorageService) { }
+  constructor(@Inject(STORAGE_SERVICE_TOKEN) private storage) { }
 
   setUser(user) {
     this.user = user;
